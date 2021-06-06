@@ -1,4 +1,4 @@
-### Check Ruby & Rails versions
+## Check Ruby & Rails versions
 
 ```shell
 $ruby -v
@@ -32,7 +32,25 @@ rails db:create db:migrate db:seed
 rails s
 ```
 
-### Comments
+## Solution
+### Subscription
+- Subscription get from the user
+### Local calls
+- The days were divided into three intervals to identify the diferents prices.
+- It identifies in which interval the call begins and which it ends.
+- Loop the intervals in relation to the duration of the call.
+- Sum (minutes * price) with their respective price.
+### National calls
+- Sum (minutes * prices). Price is get from the receiver user city.
+### International calls
+- Sum (minutes * prices). Price is get from the receiver user country.
+### Bill total cost
+- Sum (subscription + local calls + national calls + international calls)
+### View solution
+- In localhost you can check current year bills of user 1
+
+
+## Comments
 
 - Can check Entity–relationship model into ER_model.pdf
 - Calls that start in one month and end in another belong to the starting month
