@@ -33,3 +33,6 @@ rails s
 ```
 
 ### Comments
+
+- Can check Entity–relationship model into ER_model.pdf
+- Calls that start in one month and end in another belong to the starting month
