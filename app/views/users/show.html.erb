@@ -1,0 +1,10 @@
+
+<h1> <%= Date.new(2021, @bill_month, 1).strftime("%B") %> bill</h1>
+
+<ul>
+  <li> Abono mensual básico: <strong>$<%= @bill.subscription %> </strong></li>
+  <li> Consumo por llamadas Locales: <strong>$<%= @bill.local_calls_cost %> </strong></li>
+  <li> Consumo por llamadas Nacionales e Internacionales: <strong>$<%= @bill.national_and_international_cost %> </strong></li>
+  <li><h4> Total: <strong>$<%= @bill.total_cost %> </strong></h4></li> 
+</ul>
+
