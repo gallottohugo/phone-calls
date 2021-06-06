@@ -1,4 +1,4 @@
-### Check your Ruby version
+### Check Ruby & Rails versions
 
 ```shell
 $ruby -v
@@ -6,29 +6,30 @@ $ruby -v
 
 $rails -v
 > Rails 6.1.3.2
-
 ```
 
 
-## INSTALL
+## Install
 
-### Clone the repository
+### 1. clone the repository
 ```shell
 git clone https://github.com/gallottohugo/phone-calls.git
 cd phone-calls
 ```
 
-### Install dependencies
+### 2. install dependencies
 ```shell
 bundle && yarn
 ```
 
-### Initialize the database
+### 3. initialize the database
 ```shell
 rails db:create db:migrate db:seed
 ```
 
-## Run server
+### 4. run server
 ```shell
 rails s
 ```
+
+### Comments
