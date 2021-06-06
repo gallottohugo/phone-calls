@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_05_052331) do
+ActiveRecord::Schema.define(version: 2021_06_06_155629) do
 
   create_table "calls", force: :cascade do |t|
     t.datetime "start"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 2021_06_05_052331) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "country_id", null: false
     t.integer "city_id", null: false
+    t.decimal "subscription"
     t.index ["city_id"], name: "index_users_on_city_id"
     t.index ["country_id"], name: "index_users_on_country_id"
     t.index ["email"], name: "index_users_on_email", unique: true
