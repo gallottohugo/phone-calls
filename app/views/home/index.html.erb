@@ -1,0 +1,11 @@
+
+<h1>Billing 2021 by months</h1>
+<h3><%= @user.email %></h3>
+<ul>
+  <% i = 1
+  while i <= 6 do %>
+    <li><a href="/users/<%= @user.id %>?month=<%= i %>"> <%= Date.new(2021, i, 1).strftime("%B") %> </a></li>
+    <br/>
+    <% i += 1
+  end %>  
+</ul>
