@@ -102,9 +102,6 @@ class User < ApplicationRecord
         		end
       		else
         		# internacional call
-				puts "--------"
-				puts call.id.to_s
-				puts "--------"
 				cost = minutes_difference(call.start, call.end) * call.user_receiver.country.price.to_f
 				international_call_cost += cost
       		end
